@@ -11,7 +11,7 @@ buy_link: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-
 started:
 finished:
 released: 2017
-stars:
+stars: 4
 goodreads_review:
 status: Planned
 ---

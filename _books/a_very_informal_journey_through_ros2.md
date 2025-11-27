@@ -11,7 +11,7 @@ buy_link: https://design.ros2.org/
 started:
 finished:
 released: 2017
-stars:
+stars: 5
 goodreads_review:
 status: Planned
 ---

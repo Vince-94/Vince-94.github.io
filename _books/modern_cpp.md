@@ -11,7 +11,7 @@ buy_link: https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/14919
 started:
 finished:
 released: 2014
-stars:
+stars: 5
 goodreads_review:
 status: Planned
 ---
