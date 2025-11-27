@@ -4,7 +4,7 @@ title: DRAFT PoliTIO
 description: DRone Autonomous Flight Team
 img: assets/img/draft_polito/draft_logo.jpeg
 importance: 1
-category: University
+# category: University
 related_publications: false
 ---
 

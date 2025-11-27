@@ -14,6 +14,13 @@
       "countryCode": "MX",
       "region": "Jalisco"
     }
+    // "profiles": [
+    //   {
+    //     "network": "Twitter",
+    //     "username": "AlbertEinstein",
+    //     "url": "https://twitter.com/AlbertEinstein"
+    //   }
+    // ]
   },
   "work": [
     {
@@ -68,15 +75,23 @@
       ]
     }
   ],
+  //   "volunteer": [
+  //     {
+  //       "organization": "People's Climate March",
+  //       "location": "Zurich, Switzerland",
+  //       "position": "Lead Organizer",
+  //       "url": "https://example.com",
+  //       "startDate": "2014-04-01",
+  //       "endDate": "2015-07-01",
+  //       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+  //       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+  //     }
+  //   ],
   "projects": [
     {
       "name": "DRAFT PoliTO | European Space Agency - Space Resources Challenge",
       "summary": "Challenge aiming to develop an autonomous system of UGV and UAV, collaborating in a unknown space environment. Led the robotics architecture, core module development, integration, and DevOps.",
-      "highlights": [
-        "Design high-level robotics architectures with ROS2",
-        "Develop navigation and control applications",
-        "Led DevOps initiatives"
-      ],
+      "highlights": ["Design high-level robotics architectures with ROS2", "Develop navigation and control applications", "Led DevOps initiatives"],
       "startDate": "10/2021",
       "endDate": "04/2023",
       "url": "https://www.linkedin.com/company/draftpolito/posts/?feedView=all"
@@ -101,6 +116,9 @@
       "url": "https://www.polito.it/en/education/master-s-degree-programmes/mechatronic-engineering",
       "area": "Mechatronic Engineer",
       "studyType": "Master's Degree",
+      //   "startDate": "1905-01-01",
+      //   "endDate": "1905-01-01",
+      //   "score": "10",
       "courses": ["Thesis: Optimal Trajectory Generation via MPC for a Four-Wheel Steering UGV"]
     },
     {
@@ -109,53 +127,69 @@
       "url": "https://www.polito.it/en/education/bachelor-s-degree-programmes/aerospace-engineering",
       "area": "Aerospace Engineer",
       "studyType": "Bachelor's Degree",
+      //   "startDate": "1905-01-01",
+      //   "endDate": "1905-01-01",
+      //   "score": "10",
       "courses": ["Thesis: Thales Alenia Space internship"]
     }
   ],
+  //   "awards": [
+  //     {
+  //       "title": "Nobel Prize in Physics",
+  //       "date": "1921-11-01",
+  //       "awarder": "Royal Swedish Academy of Sciences",
+  //       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+  //       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+  //     }
+  //   ],
+  //   "certificates": [
+  //     {
+  //       "name": "Quantum Teleportation",
+  //       "date": "2018-01-01",
+  //       "issuer": "Stanford University",
+  //       "url": "https://example.com",
+  //       "icon": "fa-solid fa-clipboard-check"
+  //     }
+  //   ],
+  //   "publications": [
+  //     {
+  //       "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+  //       "publisher": "Annalen der Physik",
+  //       "releaseDate": "1916-03-20",
+  //       "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+  //       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+  //     }
+  //   ],
   "skills": [
     {
       "name": "OS",
       "level": "Master",
-      "keywords": [
-        "Ubuntu",
-        "Kali",
-        "Windows"
-      ]
+      "keywords": ["Ubuntu", "Kali", "Windows"]
     },
     {
       "name": "Robotics",
       "level": "Master",
-      "keywords": [
-        "ROS2", "Gazebo", "Embedded Systems"
-      ]
+      "keywords": ["ROS2", "Gazebo", "Embedded Systems"]
     },
     {
       "name": "Backend:",
       "level": "Master",
-      "keywords": [
-        "RestAPI", "FastAPI", "SQLAlchemy", "Kafka", "AWS"
-      ]
+      "keywords": ["RestAPI", "FastAPI", "SQLAlchemy", "Kafka", "AWS"]
     },
     {
       "name": "ML/AI",
       "level": "Intermediate",
-      "keywords": [
-        "ML/AI", "Scikit-learn", "Pytorch"
-      ]
+      "keywords": ["ML/AI", "Scikit-learn", "Pytorch"]
     },
     {
       "name": "Testing",
       "level": "Master",
-      "keywords": [
-        "TDD", "pytest/unittest", "googletest"
-      ]
+      "keywords": ["TDD", "pytest/unittest", "googletest"]
     },
     {
       "name": "Others",
       "level": "Intermediate",
-      "keywords": [
-        "CMake", "Bazel", "Git", "GitHub/GitLab", "Ansible", "Docker", "Agile/Scrum", "CI/CD"
-      ]
+      "keywords": ["CMake", "Bazel", "Git", "GitHub/GitLab", "Ansible", "Docker", "Agile/Scrum", "CI/CD"]
     }
   ],
   "languages": [
@@ -175,4 +209,26 @@
       "icon": ""
     }
   ]
+  //   "interests": [
+  //     {
+  //       "name": "Physics",
+  //       "icon": "fa-solid fa-tag",
+  //       "keywords": [
+  //         "Quantum Mechanics",
+  //         "Quantum Teleportation"
+  //       ]
+  //     }
+  //   ],
+  //   "references": [
+  //     {
+  //       "name": "Professor John Doe",
+  //       "icon": "fa-solid fa-laptop",
+  //       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //     },
+  //     {
+  //       "name": "Professor John Doe",
+  //       "icon": "fa-solid fa-thumbtack",
+  //       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //     }
+  //   ]
 }
