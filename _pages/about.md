@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof_full_body.jpg
+  image: prof_first.jpg
   image_circular: false # crops the image to make it circular
 #   more_info: >
 #     <p>555 your office number</p>
@@ -39,6 +39,8 @@ Italian native, with passion for languages, with English & Spanish fluent, Chine
 Remote-first, passport-ready, and always chasing the next hard problem in autonomous robotics.
 
 Currently looking for senior / lead opportunities where I can own architecture, mentor teams, and push real robots into the real world.
+
+I'm available as freelancer on Upwork: to this [link](https://www.upwork.com/freelancers/~01d0f30104ea879c39).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
