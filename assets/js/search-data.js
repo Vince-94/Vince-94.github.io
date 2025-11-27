@@ -64,31 +64,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-autonomous-coilgun-todo",
-          title: 'Autonomous Coilgun [TODO]',
-          description: "Autonomous Coilgun",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/AutonomousCoilgun/";
             },},{id: "projects-draft-politio",
           title: 'DRAFT PoliTIO',
           description: "DRone Autonomous Flight Team",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DRAFT%20PoliTO/";
-            },},{id: "projects-alarm-telegram-bot-todo",
-          title: 'Alarm Telegram Bot [TODO]',
-          description: "Bot that pushes alarm notifications over Telegram",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/TelegramAlarmBot/";
             },},{id: "projects-venturobotics",
           title: 'VentuRobotics',
           description: "Mobile Robotics start-up",
           section: "Projects",handler: () => {
               window.location.href = "/projects/VentuRobotics/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/test_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
