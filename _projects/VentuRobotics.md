@@ -2,7 +2,7 @@
 layout: page
 title: VentuRobotics
 description: Mobile Robotics start-up
-# img: assets/img/draft_polito/draft_logo.jpeg
+img: assets/img/ventu_robotics/venutrobotics_logo.jpg
 importance: 1
 # category: Work
 related_publications: false
