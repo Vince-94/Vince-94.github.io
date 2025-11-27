@@ -14,11 +14,19 @@
       "countryCode": "MX",
       "region": "Jalisco"
     }
+    // "profiles": [
+    //   {
+    //     "network": "Twitter",
+    //     "username": "AlbertEinstein",
+    //     "url": "https://twitter.com/AlbertEinstein"
+    //   }
+    // ]
   },
   "work": [
     {
       "name": "Autonomous Robotic Systems",
       "position": "Senior software developer (Confidential Client)",
+    //   "url": "https://example.com",
       "startDate": "06/2024",
       "endDate": "Present",
       "summary": "Designed a scalable, modular robotics architecture for multi-platform autonomy (UGV / UAV / UUV) prioritizing component reuse, versioned interfaces and safe upgrade paths.",
@@ -31,7 +39,7 @@
     {
       "name": "Luxoft (DXC)",
       "position": "Software automation developer (Ford)",
-      "url": "https://www.luxoft.com/",
+    //   "url": "https://example.com",
       "startDate": "08/2022",
       "endDate": "05/2024",
       "summary": "Engineered Python-based automation testing framework for Ford’s BlueCruise (ADAS L2+), boosting validation coverage and reducing testing time.",
@@ -44,7 +52,7 @@
     {
       "name": "Luxoft (DXC)",
       "position": "Software developer (BMW)",
-      "url": "https://www.luxoft.com/",
+    //   "url": "https://example.com",
       "startDate": "08/2021",
       "endDate": "07/2022",
       "summary": "C++ software developer for Adaptive AUTOSAR application layer.",
@@ -57,7 +65,7 @@
     {
       "name": "Cosmico",
       "position": "Software developer",
-      "url": "https://wearecosmico.com/it",
+    //   "url": "https://example.com",
       "startDate": "05/2020",
       "endDate": "07/2021",
       "summary": "Built a cloud-native backend for automated technical interview evaluation using FastAPI and SQLAlchemy, implementing candidate management, pre-formed assessments and result aggregation.",
@@ -68,15 +76,23 @@
       ]
     }
   ],
+//   "volunteer": [
+//     {
+//       "organization": "People's Climate March",
+//       "location": "Zurich, Switzerland",
+//       "position": "Lead Organizer",
+//       "url": "https://example.com",
+//       "startDate": "2014-04-01",
+//       "endDate": "2015-07-01",
+//       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+//       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+//     }
+//   ],
   "projects": [
     {
       "name": "DRAFT PoliTO | European Space Agency - Space Resources Challenge",
       "summary": "Challenge aiming to develop an autonomous system of UGV and UAV, collaborating in a unknown space environment. Led the robotics architecture, core module development, integration, and DevOps.",
-      "highlights": [
-        "Design high-level robotics architectures with ROS2",
-        "Develop navigation and control applications",
-        "Led DevOps initiatives"
-      ],
+    //   "highlights": [""],
       "startDate": "10/2021",
       "endDate": "04/2023",
       "url": "https://www.linkedin.com/company/draftpolito/posts/?feedView=all"
@@ -84,11 +100,7 @@
     {
       "name": "DRAFT PoliTO | Leonardo Drone Contest",
       "summary": "Contest aims to develop autonomous drones in contest of GPS-denied condition. Designed the high-level robotics architecture, led component integration and simulation",
-      "highlights": [
-        "Design high-level robotics architectures with ROS",
-        "Created and validated robotics simulations in Gazebo",
-        "Software and hardware integration"
-      ],
+    //   "highlights": [""],
       "startDate": "10/2019",
       "endDate": "10/2021",
       "url": "https://www.linkedin.com/company/draftpolito/posts/?feedView=all"
@@ -101,6 +113,9 @@
       "url": "https://www.polito.it/en/education/master-s-degree-programmes/mechatronic-engineering",
       "area": "Mechatronic Engineer",
       "studyType": "Master's Degree",
+    //   "startDate": "1905-01-01",
+    //   "endDate": "1905-01-01",
+    //   "score": "10",
       "courses": ["Thesis: Optimal Trajectory Generation via MPC for a Four-Wheel Steering UGV"]
     },
     {
@@ -109,13 +124,44 @@
       "url": "https://www.polito.it/en/education/bachelor-s-degree-programmes/aerospace-engineering",
       "area": "Aerospace Engineer",
       "studyType": "Bachelor's Degree",
+    //   "startDate": "1905-01-01",
+    //   "endDate": "1905-01-01",
+    //   "score": "10",
       "courses": ["Thesis: Thales Alenia Space internship"]
     }
   ],
+//   "awards": [
+//     {
+//       "title": "Nobel Prize in Physics",
+//       "date": "1921-11-01",
+//       "awarder": "Royal Swedish Academy of Sciences",
+//       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+//       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+//     }
+//   ],
+//   "certificates": [
+//     {
+//       "name": "Quantum Teleportation",
+//       "date": "2018-01-01",
+//       "issuer": "Stanford University",
+//       "url": "https://example.com",
+//       "icon": "fa-solid fa-clipboard-check"
+//     }
+//   ],
+//   "publications": [
+//     {
+//       "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+//       "publisher": "Annalen der Physik",
+//       "releaseDate": "1916-03-20",
+//       "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+//       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+//     }
+//   ],
   "skills": [
     {
       "name": "OS",
       "level": "Master",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Ubuntu",
         "Kali",
@@ -125,6 +171,7 @@
     {
       "name": "Robotics",
       "level": "Master",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "ROS2", "Gazebo", "Embedded Systems"
       ]
@@ -132,6 +179,7 @@
     {
       "name": "Backend:",
       "level": "Master",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "RestAPI", "FastAPI", "SQLAlchemy", "Kafka", "AWS"
       ]
@@ -139,6 +187,7 @@
     {
       "name": "ML/AI",
       "level": "Intermediate",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "ML/AI", "Scikit-learn", "Pytorch"
       ]
@@ -146,6 +195,7 @@
     {
       "name": "Testing",
       "level": "Master",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "TDD", "pytest/unittest", "googletest"
       ]
@@ -153,6 +203,7 @@
     {
       "name": "Others",
       "level": "Intermediate",
+    //   "icon": "fa-solid fa-hashtag",
       "keywords": [
         "CMake", "Bazel", "Git", "GitHub/GitLab", "Ansible", "Docker", "Agile/Scrum", "CI/CD"
       ]
@@ -175,4 +226,30 @@
       "icon": ""
     }
   ]
+//   "interests": [
+//     {
+//       "name": "Physics",
+//       "icon": "fa-solid fa-tag",
+//       "keywords": [
+//         "Quantum Mechanics",
+//         "Quantum Computing",
+//         "Quantum Information",
+//         "Quantum Cryptography",
+//         "Quantum Communication",
+//         "Quantum Teleportation"
+//       ]
+//     }
+//   ],
+//   "references": [
+//     {
+//       "name": "Professor John Doe",
+//       "icon": "fa-solid fa-laptop",
+//       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+//     },
+//     {
+//       "name": "Professor John Doe",
+//       "icon": "fa-solid fa-thumbtack",
+//       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+//     }
+//   ]
 }
