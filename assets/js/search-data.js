@@ -79,11 +79,16 @@ ninja.data = [{
           description: "Bot that pushes alarm notifications over Telegram",
           section: "Projects",handler: () => {
               window.location.href = "/projects/TelegramAlarmBot/";
-            },},{id: "projects-venturobotics-todo",
-          title: 'VentuRobotics [TODO]',
+            },},{id: "projects-venturobotics",
+          title: 'VentuRobotics',
           description: "Mobile Robotics start-up",
           section: "Projects",handler: () => {
               window.location.href = "/projects/VentuRobotics/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/test_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
