@@ -66,7 +66,7 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "projects-autonomous-coilgun-todo",
           title: 'Autonomous Coilgun [TODO]',
-          description: "",
+          description: "Autonomous Coilgun",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AutonomousCoilgun/";
             },},{id: "projects-draft-politio",
