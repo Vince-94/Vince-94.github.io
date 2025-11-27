@@ -3,6 +3,7 @@ layout: page
 permalink: /repositories/
 title: Repositories
 # description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Here it is shown just the public contribution stats.
 nav: true
 nav_order: 3
 ---
