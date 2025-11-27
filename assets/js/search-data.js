@@ -59,11 +59,21 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-a-very-informal-journey-through-ros2",
+          title: 'A Very Informal Journey Through ROS2',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/a_very_informal_journey_through_ros2/";
+            },},{id: "books-designing-data-intensive-applications",
+          title: 'Designing Data-Intensive Applications',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/designing_data_intensive_applications/";
+            },},{id: "books-effective-modern-c",
+          title: 'Effective Modern C++',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/modern_cpp/";
             },},{id: "projects-draft-politio",
           title: 'DRAFT PoliTIO',
           description: "DRone Autonomous Flight Team",
