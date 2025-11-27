@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Autonomous Coilgun [TODO]
-# description: 
-# img: assets/img/draft_polito/draft_logo.jpeg
+description: Autonomous Coilgun
 importance: 1
-# category: University
+category: Free-time
 related_publications: false
 ---
 
