@@ -35,3 +35,15 @@ VentuRobotics bridges my academic roots (DRAFT PoliTO challenges) with productio
 <div class="caption">
     Project high-level schema.
 </div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ventu_robotics/venturobotics_drone_scheme.jpeg" title="drone schematic" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ventu_robotics/venturobotics_drone_prototype.jpeg" title="drone prototype" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Firsts drone prototype.
+</div>
