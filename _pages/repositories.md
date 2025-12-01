@@ -8,6 +8,10 @@ nav: true
 nav_order: 3
 ---
 
+> **Warning**
+> The visualization of GitHub users and repositories could be affected by framework updates, but the links keep working.
+
+
 {% if site.data.repositories.github_users %}
 
 ## GitHub users
