@@ -167,29 +167,49 @@
       "keywords": ["Ubuntu", "Kali", "Windows"]
     },
     {
-      "name": "Robotics",
+      "name": "Programming",
       "level": "Master",
-      "keywords": ["ROS2", "Gazebo", "Embedded Systems"]
+      "keywords": ["C++", "C", "Python", "Bash", "Matlab/Simulink"]  // Go, Rust, Java
     },
     {
-      "name": "Backend:",
+      "name": "Data",
       "level": "Master",
-      "keywords": ["RestAPI", "FastAPI", "SQLAlchemy", "Kafka", "AWS"]
+      "keywords": ["Pandas", "SQL (PostgreSQL, SQLAlchemy)", "NoSQL (MongoDB, PyMongo, Redis, Pydantic)", "FastAPI", "Kafka", "Airflow", "Spark"]
+    },
+    {
+      "name": "Robotics",
+      "level": "Master",
+      "keywords": ["ROS2", "micro-ROS", "Gazebo"]
+    },
+    {
+      "name": "Embedded",
+      "level": "Intermediate",
+      "keywords": ["FreeRTOS", "IoT", "RPi"]  // ESP32, STM32
     },
     {
       "name": "ML/AI",
       "level": "Intermediate",
-      "keywords": ["ML/AI", "Scikit-learn", "Pytorch"]
+      "keywords": ["Numpy", "Scikit-learn", "Pytorch", "OpenCV"]  // YOLOv8
     },
+    {
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": ["Git", "GitHub/GitLab", "Ansible", "Docker", "Agile/Scrum", "CI/CD", "Terraform", "AWS"]
+    },
+    // {
+    //   "name": "Parallel computing",
+    //   "level": "Intermediate",
+    //   "keywords": ["HIP", "CUDA", "ROCm"]
+    // },
     {
       "name": "Testing",
       "level": "Master",
-      "keywords": ["TDD", "pytest/unittest", "googletest"]
+      "keywords": ["TDD", "pytest/unittest", "gtest/gmock"]
     },
     {
-      "name": "Others",
+      "name": "Build Tool",
       "level": "Intermediate",
-      "keywords": ["CMake", "Bazel", "Git", "GitHub/GitLab", "Ansible", "Docker", "Agile/Scrum", "CI/CD"]
+      "keywords": ["Make", "CMake", "Bazel"]
     }
   ],
   "languages": [
