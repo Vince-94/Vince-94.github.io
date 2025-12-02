@@ -169,7 +169,7 @@
     {
       "name": "Programming",
       "level": "Master",
-      "keywords": ["C++", "C", "Python", "Bash", "Matlab/Simulink"]  // Go, Rust, Java
+      "keywords": ["C++", "C", "Python", "Bash", "Matlab/Simulink"] // Go, Rust, Java
     },
     {
       "name": "Data",
@@ -184,12 +184,12 @@
     {
       "name": "Embedded",
       "level": "Intermediate",
-      "keywords": ["FreeRTOS", "IoT", "RPi"]  // ESP32, STM32
+      "keywords": ["FreeRTOS", "IoT", "RPi"] // ESP32, STM32
     },
     {
       "name": "ML/AI",
       "level": "Intermediate",
-      "keywords": ["Numpy", "Scikit-learn", "Pytorch", "OpenCV"]  // YOLOv8
+      "keywords": ["Numpy", "Scikit-learn", "Pytorch", "OpenCV"] // YOLOv8
     },
     {
       "name": "DevOps",
