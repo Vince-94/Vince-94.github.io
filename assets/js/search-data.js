@@ -69,6 +69,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/designing_data_intensive_applications/";
+            },},{id: "books-il-principe",
+          title: 'Il Principe',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/il_principe/";
+            },},{id: "books-meditations",
+          title: 'Meditations',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/meditations/";
             },},{id: "books-effective-modern-c",
           title: 'Effective Modern C++',
           description: "",
@@ -89,7 +99,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/CV_Ruotolo_Vincenzo_0.pdf", "_blank");
+          window.open("/assets/pdf/CV_Ruotolo_Vincenzo.pdf", "_blank");
         },
       },{
         id: 'social-email',
