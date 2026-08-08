@@ -16,6 +16,4 @@ Remote-first, passport-ready, and always chasing the next hard problem in autono
 
 Currently looking for senior / lead opportunities where I can own architecture, mentor teams, and push real robots into the real world.
 
-I'm available as freelancer on Upwork: to this [link](https://www.upwork.com/freelancers/~01d0f30104ea879c39).
-
 **_Per aspera ad astra_**

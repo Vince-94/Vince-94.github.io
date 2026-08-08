@@ -13,8 +13,10 @@ const { frontmatter } = Astro.props;
 		<Image src={profilePhoto} alt={site.name} width={200} height={200} class="profile-photo" />
 		<div class="prose">
 			<h1>{site.name}</h1>
+			<div class="bio-panel">
+				<slot />
+			</div>
 			<SocialLinks />
-			<slot />
 		</div>
 	</div>
 </BaseLayout>
@@ -33,6 +35,7 @@ const { frontmatter } = Astro.props;
 		width: 200px;
 		height: 200px;
 		flex-shrink: 0;
+		border: 1px solid var(--color-border);
 	}
 
 	.prose {
@@ -40,7 +43,19 @@ const { frontmatter } = Astro.props;
 		min-width: 280px;
 	}
 
-	.prose :global(p) {
+	.bio-panel {
+		border: 1px solid var(--color-border);
+		border-radius: 0.5rem;
+		background: var(--color-bg-subtle);
+		padding: 1.25rem 1.5rem;
+	}
+
+	.bio-panel :global(p) {
 		margin: 0 0 1rem;
+		font-size: 0.92rem;
+	}
+
+	.bio-panel :global(p:last-child) {
+		margin-bottom: 0;
 	}
 </style>

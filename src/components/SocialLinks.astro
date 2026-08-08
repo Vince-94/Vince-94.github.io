@@ -8,16 +8,16 @@ const { socials } = site;
 
 <ul class="social-links">
 	<li>
-		<a href={`mailto:${socials.email}`} aria-label="Email"><Icon name="mail" /></a>
+		<a href={`mailto:${socials.email}`} aria-label="Email"><Icon name="mail" /><span>mail</span></a>
 	</li>
 	<li>
 		<a href={`https://github.com/${socials.github}`} target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-			><Icon name="github" /></a
+			><Icon name="github" /><span>github</span></a
 		>
 	</li>
 	<li>
 		<a href={`https://gitlab.com/${socials.gitlab}`} target="_blank" rel="noopener noreferrer" aria-label="GitLab"
-			><Icon name="gitlab" /></a
+			><Icon name="gitlab" /><span>gitlab</span></a
 		>
 	</li>
 	<li>
@@ -25,7 +25,7 @@ const { socials } = site;
 			href={`https://www.linkedin.com/in/${socials.linkedin}`}
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label="LinkedIn"><Icon name="linkedin" /></a
+			aria-label="LinkedIn"><Icon name="linkedin" /><span>linkedin</span></a
 		>
 	</li>
 	<li>
@@ -33,12 +33,12 @@ const { socials } = site;
 			href={`https://www.instagram.com/${socials.instagram}`}
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label="Instagram"><Icon name="instagram" /></a
+			aria-label="Instagram"><Icon name="instagram" /><span>instagram</span></a
 		>
 	</li>
 	<li>
 		<a href={socials.upwork} target="_blank" rel="noopener noreferrer" aria-label="UpWork">
-			<img src={upworkLogo.src} alt="UpWork" width="20" height="20" />
+			<img src={upworkLogo.src} alt="" width="18" height="18" /><span>upwork</span>
 		</a>
 	</li>
 </ul>
@@ -46,23 +46,37 @@ const { socials } = site;
 <style>
 	.social-links {
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+		column-gap: 1.5rem;
+		row-gap: 0.75rem;
 		list-style: none;
 		padding: 0;
-		margin: 1rem 0;
+		margin: 1.5rem 0;
 	}
 
 	.social-links a {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
+		gap: 0.5rem;
+		color: var(--color-accent);
+		font-size: 0.85rem;
+		text-decoration: none;
+	}
+
+	.social-links a span {
 		color: var(--color-text-muted);
 	}
 
 	.social-links a:hover {
+		color: var(--color-text);
+	}
+
+	.social-links a:hover span {
 		color: var(--color-accent);
 	}
 
 	.social-links img {
 		border-radius: 3px;
+		display: block;
 	}
 </style>
