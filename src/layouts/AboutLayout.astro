@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from './BaseLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import profilePhoto from '../assets/profile/prof_first.jpg';
+import { site } from '../data/site';
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter?.title}>
+	<div class="about">
+		<Image src={profilePhoto} alt={site.name} width={200} height={200} class="profile-photo" />
+		<div class="prose">
+			<h1>{site.name}</h1>
+			<SocialLinks />
+			<slot />
+		</div>
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		gap: 2rem;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	.profile-photo {
+		border-radius: 0.5rem;
+		object-fit: cover;
+		width: 200px;
+		height: 200px;
+		flex-shrink: 0;
+	}
+
+	.prose {
+		flex: 1;
+		min-width: 280px;
+	}
+
+	.prose :global(p) {
+		margin: 0 0 1rem;
+	}
+</style>

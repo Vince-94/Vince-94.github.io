@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { getCollection } from 'astro:content';
+
+const books = (await getCollection('books')).sort((a, b) => b.data.stars - a.data.stars);
+---
+
+<BaseLayout title="Books">
+	<h1>Reading list</h1>
+	<div class="card-grid">
+		{books.map((book) => <BookCard book={book} />)}
+	</div>
+</BaseLayout>

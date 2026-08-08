@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	book: CollectionEntry<'books'>;
+}
+
+const { book } = Astro.props;
+const { title, author, cover, stars, status } = book.data;
+---
+
+<a class="card" href={`/books/${book.id}/`}>
+	<Image src={cover} alt={`${title} cover`} width={320} height={480} />
+	<div class="card-body">
+		<h3>{title}</h3>
+		<p class="author">{author}</p>
+		<p class="meta">
+			<span aria-label={`${stars} out of 5 stars`}>{'★'.repeat(stars)}{'☆'.repeat(5 - stars)}</span>
+			<span class="status">{status}</span>
+		</p>
+	</div>
+</a>
+
+<style>
+	.card {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.card img {
+		aspect-ratio: 2 / 3;
+	}
+
+	.card h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+	}
+
+	.author {
+		margin: 0 0 0.5rem;
+		color: var(--color-text-muted);
+		font-size: 0.85rem;
+	}
+
+	.meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+	}
+</style>

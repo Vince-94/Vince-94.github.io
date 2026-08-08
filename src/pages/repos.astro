@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RepoCard from '../components/RepoCard.astro';
+import { repositories } from '../data/repositories';
+
+const repos = await Promise.all(
+	repositories.githubRepos.map(async (fullName) => {
+		try {
+			const res = await fetch(`https://api.github.com/repos/${fullName}`, {
+				headers: { Accept: 'application/vnd.github+json' },
+			});
+			if (!res.ok) throw new Error(`GitHub API ${res.status} for ${fullName}`);
+			const data = await res.json();
+			return {
+				fullName,
+				description: data.description as string | null,
+				language: data.language as string | null,
+				stars: data.stargazers_count as number,
+				url: data.html_url as string,
+				error: false,
+			};
+		} catch {
+			return { fullName, url: `https://github.com/${fullName}`, error: true };
+		}
+	}),
+);
+---
+
+<BaseLayout title="Repositories">
+	<h1>GitHub repositories</h1>
+	<div class="card-grid">
+		{repos.map((repo) => <RepoCard {...repo} />)}
+	</div>
+</BaseLayout>

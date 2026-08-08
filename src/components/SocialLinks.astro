@@ -1,0 +1,68 @@
+---
+import Icon from './icons/Icon.astro';
+import upworkLogo from '../assets/social/upwork_logo.png';
+import { site } from '../data/site';
+
+const { socials } = site;
+---
+
+<ul class="social-links">
+	<li>
+		<a href={`mailto:${socials.email}`} aria-label="Email"><Icon name="mail" /></a>
+	</li>
+	<li>
+		<a href={`https://github.com/${socials.github}`} target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+			><Icon name="github" /></a
+		>
+	</li>
+	<li>
+		<a href={`https://gitlab.com/${socials.gitlab}`} target="_blank" rel="noopener noreferrer" aria-label="GitLab"
+			><Icon name="gitlab" /></a
+		>
+	</li>
+	<li>
+		<a
+			href={`https://www.linkedin.com/in/${socials.linkedin}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="LinkedIn"><Icon name="linkedin" /></a
+		>
+	</li>
+	<li>
+		<a
+			href={`https://www.instagram.com/${socials.instagram}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Instagram"><Icon name="instagram" /></a
+		>
+	</li>
+	<li>
+		<a href={socials.upwork} target="_blank" rel="noopener noreferrer" aria-label="UpWork">
+			<img src={upworkLogo.src} alt="UpWork" width="20" height="20" />
+		</a>
+	</li>
+</ul>
+
+<style>
+	.social-links {
+		display: flex;
+		gap: 1rem;
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.social-links a {
+		display: flex;
+		align-items: center;
+		color: var(--color-text-muted);
+	}
+
+	.social-links a:hover {
+		color: var(--color-accent);
+	}
+
+	.social-links img {
+		border-radius: 3px;
+	}
+</style>

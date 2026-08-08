@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { title, description, img } = project.data;
+---
+
+<a class="card" href={`/projects/${project.id}/`}>
+	<Image src={img} alt={title} width={480} height={300} />
+	<div class="card-body">
+		<h3>{title}</h3>
+		<p>{description}</p>
+	</div>
+</a>
+
+<style>
+	.card {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.card h3 {
+		margin: 0 0 0.5rem;
+	}
+
+	.card p {
+		margin: 0;
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+	}
+</style>

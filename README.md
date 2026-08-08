@@ -25,9 +25,25 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+## 🔧 Local setup (Node via nvm, activate-on-demand)
+
+This project needs Node.js 22+. It's installed via [nvm](https://github.com/nvm-sh/nvm), which keeps Node entirely inside `~/.nvm` — no system packages, no `sudo`, nothing added to shell startup files. Node is only on `PATH` in a terminal after you explicitly load nvm in that session, the same way you'd `source venv/bin/activate` for a Python virtualenv.
+
+```sh
+# one-time, only if nvm itself isn't installed yet:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# every time you open a new terminal and want Node available here:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use 22   # first time on a machine: nvm install 22
+```
+
+Close the terminal (or just don't run those lines) and Node disappears from `PATH` again — `~/.nvm` sits untouched on disk either way, and `rm -rf ~/.nvm` removes it completely, with nothing left behind elsewhere on the system.
+
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project, from a terminal (after activating Node as above):
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |

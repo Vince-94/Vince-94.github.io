@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const books = await getCollection('books');
+	return books.map((book) => ({
+		params: { slug: book.id },
+		props: { book },
+	}));
+}
+
+const { book } = Astro.props;
+const { title, author, cover, stars, status, categories, tags, buy_link, started, finished, released } = book.data;
+const { Content } = await render(book);
+
+// Dates are calendar dates with no time component; format in UTC so the
+// local timezone offset can't shift them back or forward a day.
+const formatDate = (date: Date) => date.toLocaleDateString('en-US', { timeZone: 'UTC' });
+---
+
+<BaseLayout title={title}>
+	<div class="book-header">
+		<Image src={cover} alt={`${title} cover`} width={200} height={300} />
+		<div>
+			<h1>{title}</h1>
+			<p class="author">{author} · {released}</p>
+			<p aria-label={`${stars} out of 5 stars`}>{'★'.repeat(stars)}{'☆'.repeat(5 - stars)}</p>
+			<p class="status">{status}{started && ` · started ${formatDate(started)}`}{finished && ` · finished ${formatDate(finished)}`}</p>
+			{categories.length > 0 && <p class="tags">{categories.join(', ')}</p>}
+			{tags.length > 0 && <p class="tags">{tags.join(', ')}</p>}
+			{buy_link && <a class="button" href={buy_link} target="_blank" rel="noopener noreferrer">Buy</a>}
+		</div>
+	</div>
+	<div class="prose">
+		<Content />
+	</div>
+</BaseLayout>
+
+<style>
+	.book-header {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+		margin-bottom: 1.5rem;
+	}
+
+	.book-header img {
+		border-radius: 0.375rem;
+		width: 200px;
+		height: 300px;
+		object-fit: cover;
+	}
+
+	.author,
+	.status,
+	.tags {
+		color: var(--color-text-muted);
+		margin: 0.25rem 0;
+	}
+</style>

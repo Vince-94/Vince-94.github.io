@@ -1,0 +1,171 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { resume } from '../data/resume';
+import { site } from '../data/site';
+
+const { basics, work, projects, education, skills, languages } = resume;
+---
+
+<BaseLayout title="CV">
+	<div class="cv-header">
+		<h1>{basics.name}</h1>
+		<p class="label">{basics.label}</p>
+		<a class="button" href={site.cvPdf} download>Download PDF</a>
+	</div>
+
+	<p>{basics.summary}</p>
+
+	<h2>Work Experience</h2>
+	{
+		work.map((job) => (
+			<article class="entry">
+				<div class="entry-header">
+					<h3>
+						{job.url ? <a href={job.url} target="_blank" rel="noopener noreferrer">{job.name}</a> : job.name}
+					</h3>
+					<span class="dates">{job.startDate} – {job.endDate}</span>
+				</div>
+				<p class="position">{job.position}</p>
+				<p>{job.summary}</p>
+				<ul>
+					{job.highlights.map((h) => <li>{h}</li>)}
+				</ul>
+			</article>
+		))
+	}
+
+	<h2>Team Projects &amp; Competitions</h2>
+	{
+		projects.map((project) => (
+			<article class="entry">
+				<div class="entry-header">
+					<h3>
+						{project.url ? (
+							<a href={project.url} target="_blank" rel="noopener noreferrer">
+								{project.name}
+							</a>
+						) : (
+							project.name
+						)}
+					</h3>
+					<span class="dates">{project.startDate} – {project.endDate}</span>
+				</div>
+				<p>{project.summary}</p>
+				<ul>
+					{project.highlights.map((h) => <li>{h}</li>)}
+				</ul>
+			</article>
+		))
+	}
+
+	<h2>Education</h2>
+	{
+		education.map((edu) => (
+			<article class="entry">
+				<div class="entry-header">
+					<h3>
+						{edu.url ? (
+							<a href={edu.url} target="_blank" rel="noopener noreferrer">
+								{edu.institution}
+							</a>
+						) : (
+							edu.institution
+						)}
+					</h3>
+					<span class="dates">{edu.location}</span>
+				</div>
+				<p>{edu.studyType}, {edu.area}</p>
+				{edu.courses && (
+					<ul>
+						{edu.courses.map((c) => <li>{c}</li>)}
+					</ul>
+				)}
+			</article>
+		))
+	}
+
+	<h2>Skills</h2>
+	<div class="skills-grid">
+		{
+			skills.map((skill) => (
+				<div class="skill">
+					<h4>{skill.name} <span class="level">· {skill.level}</span></h4>
+					<p>{skill.keywords.join(', ')}</p>
+				</div>
+			))
+		}
+	</div>
+
+	<h2>Languages</h2>
+	<ul class="languages">
+		{languages.map((lang) => <li>{lang.language} — {lang.fluency}</li>)}
+	</ul>
+</BaseLayout>
+
+<style>
+	.cv-header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-bottom: 1.5rem;
+	}
+
+	.cv-header h1 {
+		margin: 0;
+	}
+
+	.label {
+		color: var(--color-text-muted);
+		margin: 0;
+		flex: 1;
+	}
+
+	.entry {
+		margin-bottom: 1.75rem;
+	}
+
+	.entry-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.entry-header h3 {
+		margin: 0;
+	}
+
+	.dates,
+	.position {
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 1rem;
+	}
+
+	.skill h4 {
+		margin: 0 0 0.25rem;
+	}
+
+	.skill p {
+		margin: 0;
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+	}
+
+	.level {
+		color: var(--color-text-muted);
+		font-weight: normal;
+		font-size: 0.85rem;
+	}
+
+	.languages {
+		padding-left: 1.25rem;
+	}
+</style>

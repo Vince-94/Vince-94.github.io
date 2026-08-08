@@ -1,0 +1,57 @@
+---
+interface Props {
+	fullName: string;
+	description?: string | null;
+	language?: string | null;
+	stars?: number;
+	url: string;
+	error?: boolean;
+}
+
+const { fullName, description, language, stars, url, error } = Astro.props;
+const name = fullName.split('/')[1];
+---
+
+<a class="card repo-card" href={url} target="_blank" rel="noopener noreferrer">
+	<div class="card-body">
+		<h3>{name}</h3>
+		{error ? (
+			<p class="muted">Details unavailable right now — view on GitHub.</p>
+		) : (
+			<>
+				<p>{description ?? 'No description provided.'}</p>
+				<p class="meta">
+					{language && <span>{language}</span>}
+					<span>★ {stars}</span>
+				</p>
+			</>
+		)}
+	</div>
+</a>
+
+<style>
+	.repo-card {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.repo-card h3 {
+		margin: 0 0 0.5rem;
+	}
+
+	.repo-card p {
+		margin: 0;
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+	}
+
+	.meta {
+		display: flex;
+		gap: 1rem;
+		margin-top: 0.5rem !important;
+	}
+
+	.muted {
+		font-style: italic;
+	}
+</style>
