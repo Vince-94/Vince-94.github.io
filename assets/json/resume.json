@@ -29,10 +29,10 @@
       "url": "https://www.griddynamics.com/",
       "startDate": "04/2026",
       "endDate": "Present",
-      "summary": "Contributor to the TensorFlow project"
-    //   "highlights": [
-    //     ""
-    //   ]
+      "summary": "Contributor to the TensorFlow project",
+      "highlights": [
+        "Bug findings in Tensorflow project"
+      ]
     },
     {
       "name": "Amaris (Caterpillar)",
