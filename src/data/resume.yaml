@@ -20,12 +20,12 @@ basics:
     region: Jalisco
 
 work:
-  - name: Grid Dynamics (Google)
+  - name: Grid Dynamics
     position: C++ Software engineer
     url: https://www.griddynamics.com/
     startDate: "05/2026"
     endDate: Present
-    summary: Contributor to the TensorFlow project
+    summary: Contributor to the TensorFlow project in Google
     highlights:
       - Bug findings in Tensorflow project
 
