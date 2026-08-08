@@ -20,7 +20,7 @@ basics:
     region: Jalisco
 
 work:
-  - name: Grid Dynamics
+  - name: Grid Dynamics (Google)
     position: C++ Software engineer
     url: https://www.griddynamics.com/
     startDate: "05/2026"
@@ -54,8 +54,8 @@ work:
       - Implement embedded firmware, hardware drivers and system integration
       - Lead and coordinate a cross-functional agile team of 8 engineers
 
-  - name: Luxoft/DXC
-    position: Software automation developer (Ford)
+  - name: Luxoft/DXC (Ford)
+    position: Software automation developer
     url: https://www.luxoft.com/
     startDate: "05/2023"
     endDate: "10/2025"
@@ -67,8 +67,8 @@ work:
       - Implemented CAN / UDS / TCP / UDP adapters for trace capture, injection and end-to-end replay
       - Developed unit/integration/smoke/sanity suites and Python harnesses that shifted many checks off HIL into CI, reducing regression time
 
-  - name: Luxoft/DXC
-    position: Software developer (BMW)
+  - name: Luxoft/DXC (BMW)
+    position: Software developer
     url: https://www.luxoft.com/
     startDate: "01/2022"
     endDate: "04/2023"
