@@ -1,5 +1,8 @@
+import { parse } from 'yaml';
 import { z } from 'astro/zod';
-import resumeJson from './resume.json';
+import resumeYamlRaw from './resume.yaml?raw';
+
+const resumeYaml = parse(resumeYamlRaw);
 
 const resumeSchema = z.object({
 	basics: z.object({
@@ -64,4 +67,4 @@ const resumeSchema = z.object({
 });
 
 export type Resume = z.infer<typeof resumeSchema>;
-export const resume: Resume = resumeSchema.parse(resumeJson);
+export const resume: Resume = resumeSchema.parse(resumeYaml);
