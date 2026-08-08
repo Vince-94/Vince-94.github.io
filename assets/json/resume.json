@@ -24,6 +24,31 @@
   },
   "work": [
     {
+      "name": "Grid Dynamics (Google)",
+      "position": "C++ Software engineer",
+      "url": "https://www.griddynamics.com/",
+      "startDate": "04/2026",
+      "endDate": "Present",
+      "summary": "Contributor to the TensorFlow project"
+    //   "highlights": [
+    //     ""
+    //   ]
+    },
+    {
+      "name": "Amaris (Caterpillar)",
+      "position": "C++ Senior Software engineer",
+      "url": "https://amaris.com/",
+      "startDate": "08/2022",
+      "endDate": "05/2024",
+      "summary": "Design and implement from scratch a GPS module for the Caterpillar robotics framework",
+      "highlights": [
+        "Define GPS module requirements according NMEA protocol",
+        "Define GPS module architecture",
+        "Implementaiton of the GPS module and testing strtegy",
+        "Integration of the GPS module within the CAT framework"
+      ]
+    },
+    {
       "name": "Autonomous Robotic Systems",
       "position": "Senior software developer (Confidential Client)",
       "startDate": "06/2024",
