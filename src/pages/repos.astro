@@ -28,7 +28,13 @@ const repos = await Promise.all(
 
 <BaseLayout title="Repositories">
 	<h1>GitHub repositories</h1>
-	<div class="card-grid">
+	<div class="card-grid repo-grid">
 		{repos.map((repo) => <RepoCard {...repo} />)}
 	</div>
 </BaseLayout>
+
+<style>
+	.repo-grid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	}
+</style>

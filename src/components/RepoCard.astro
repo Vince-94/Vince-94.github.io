@@ -10,11 +10,15 @@ interface Props {
 
 const { fullName, description, language, stars, url, error } = Astro.props;
 const name = fullName.split('/')[1];
+// repo names are snake_case with no spaces, so give the browser a clean place
+// to break the line (right after each underscore) instead of an arbitrary
+// mid-word wrap.
+const nameWithBreaks = name.split('_').join('_<wbr />');
 ---
 
 <a class="card repo-card" href={url} target="_blank" rel="noopener noreferrer">
 	<div class="card-body">
-		<h3>{name}</h3>
+		<h3 set:html={nameWithBreaks} />
 		{error ? (
 			<p class="muted">Details unavailable right now — view on GitHub.</p>
 		) : (
@@ -37,6 +41,7 @@ const name = fullName.split('/')[1];
 
 	.repo-card h3 {
 		margin: 0 0 0.5rem;
+		overflow-wrap: anywhere;
 	}
 
 	.repo-card p {
