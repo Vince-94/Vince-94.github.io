@@ -23,7 +23,7 @@ work:
   - name: Grid Dynamics (Google)
     position: C++ Software engineer
     url: https://www.griddynamics.com/
-    startDate: "04/2026"
+    startDate: "05/2026"
     endDate: Present
     summary: Contributor to the TensorFlow project
     highlights:
@@ -32,8 +32,8 @@ work:
   - name: Amaris (Caterpillar)
     position: C++ Senior Software engineer
     url: https://amaris.com/
-    startDate: "08/2022"
-    endDate: "05/2024"
+    startDate: "11/2025"
+    endDate: "04/2026"
     summary: Design and implement from scratch a GPS module for the Caterpillar robotics framework
     highlights:
       - Define GPS module requirements according NMEA protocol
@@ -43,7 +43,7 @@ work:
 
   - name: Autonomous Robotic Systems
     position: Senior software developer (Confidential Client)
-    startDate: "06/2024"
+    startDate: "01/2024"
     endDate: Present
     summary: >-
       Designed a scalable, modular robotics architecture for multi-platform
@@ -54,11 +54,11 @@ work:
       - Implement embedded firmware, hardware drivers and system integration
       - Lead and coordinate a cross-functional agile team of 8 engineers
 
-  - name: Luxoft (DXC)
+  - name: Luxoft/DXC
     position: Software automation developer (Ford)
     url: https://www.luxoft.com/
-    startDate: "08/2022"
-    endDate: "05/2024"
+    startDate: "05/2023"
+    endDate: "10/2025"
     summary: >-
       Engineered Python-based automation testing framework for Ford's BlueCruise
       (ADAS L2+), boosting validation coverage and reducing testing time.
@@ -67,11 +67,11 @@ work:
       - Implemented CAN / UDS / TCP / UDP adapters for trace capture, injection and end-to-end replay
       - Developed unit/integration/smoke/sanity suites and Python harnesses that shifted many checks off HIL into CI, reducing regression time
 
-  - name: Luxoft (DXC)
+  - name: Luxoft/DXC
     position: Software developer (BMW)
     url: https://www.luxoft.com/
-    startDate: "08/2021"
-    endDate: "07/2022"
+    startDate: "01/2022"
+    endDate: "04/2023"
     summary: C++ software developer for Adaptive AUTOSAR application layer.
     highlights:
       - Implemented C++ modules for Adaptive AUTOSAR (ARA::COM); designed efficient serialization/deserialization for ECU data flows
@@ -81,8 +81,8 @@ work:
   - name: Cosmico
     position: Software developer
     url: https://wearecosmico.com/it
-    startDate: "05/2020"
-    endDate: "07/2021"
+    startDate: "01/2021"
+    endDate: "12/2021"
     summary: >-
       Built a cloud-native backend for automated technical interview evaluation
       using FastAPI and SQLAlchemy, implementing candidate management,
