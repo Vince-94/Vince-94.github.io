@@ -48,6 +48,8 @@ const resumeSchema = z.object({
 			url: z.url().optional(),
 			area: z.string(),
 			studyType: z.string(),
+			startDate: z.string().optional(),
+			endDate: z.string().optional(),
 			courses: z.array(z.string()).optional(),
 		}),
 	),

@@ -72,9 +72,12 @@ const { basics, work, projects, education, skills, languages } = resume;
 							edu.institution
 						)}
 					</h3>
-					<span class="dates">{edu.location}</span>
+					{edu.startDate && edu.endDate && (
+						<span class="dates">{edu.startDate} – {edu.endDate}</span>
+					)}
 				</div>
 				<p>{edu.studyType}, {edu.area}</p>
+				<p class="position">{edu.location}</p>
 				{edu.courses && (
 					<ul>
 						{edu.courses.map((c) => <li>{c}</li>)}
