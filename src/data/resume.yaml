@@ -22,7 +22,7 @@ basics:
 
 work:
   - name: Grid Dynamics
-    position: Software developer @ Google · Full-time · Guadalajara, Mexico
+    position: Software Engineer @ Google · Full-time · Guadalajara, Mexico
     url: https://www.griddynamics.com/
     startDate: "05/2026"
     endDate: Present
@@ -35,7 +35,7 @@ work:
       - Perform root-cause analysis using debugging tools, sanitizers, and profilers to isolate hard-to-reproduce, low-level bugs affecting stability and correctness
 
   - name: Amaris
-    position: Senior Software developer @ Caterpillar · Full-time · Mexico
+    position: Senior Software Engineer @ Caterpillar · Full-time · Mexico
     url: https://amaris.com/
     startDate: "01/2026"
     endDate: "04/2026"
@@ -45,7 +45,7 @@ work:
       - Design and implement testing strategies
 
   - name: Autonomous Robotic Systems
-    position: Senior Software developer · Contractor · Mexico
+    position: Senior Software Engineer · Contractor · Mexico
     startDate: "06/2024"
     endDate: "12/2025"
     summary: >-
@@ -55,10 +55,10 @@ work:
     highlights:
       - Develop and roll out core algorithm modules (Sensors, GNC, SLAM) using efficient, real-time C++ and utilities modules (remote teleoperation, telemetry, diagnostics, infrastructure) using Python, within ROS2 middleware
       - Develop embedded firmware, GPU acceleration, hardware drivers and system integration
-      - Lead and coordinate a cross-functional agile team of 8 engineers
+      - Lead and coordinate a cross-functional agile team of 4 engineers
 
   - name: Luxoft (DXC)
-    position: Software automation developer @ Ford · Full-time · Mexico
+    position: Software Automation Engineer @ Ford · Full-time · Mexico
     url: https://www.luxoft.com/
     startDate: "05/2023"
     endDate: "10/2025"
@@ -72,7 +72,7 @@ work:
       - Developed unit, integration, smoke and sanity suites, plus Python harnesses that shifted many checks off HIL into CI, reducing regression time
 
   - name: Cosmico
-    position: Software developer · Contractor · Remote, Italy
+    position: Software Engineer · Contractor · Remote, Italy
     url: https://wearecosmico.com/it
     startDate: "01/2023"
     endDate: "12/2023"
@@ -86,11 +86,11 @@ work:
       - Integrated ML/AI inference for automated scoring (code quality, tests, plagiarism detection) and designed retraining pipelines using labeled outcomes and feedback loops
 
   - name: Luxoft (DXC)
-    position: Software developer @ BMW · Full-time · Turin, Italy
+    position: Software Engineer @ BMW · Full-time · Turin, Italy
     url: https://www.luxoft.com/
     startDate: "01/2022"
     endDate: "04/2023"
-    summary: C++ software developer for Adaptive AUTOSAR application layer in BMW Autonomous Driving (ADAS L2+).
+    summary: C++ software engineer for Adaptive AUTOSAR application layer in BMW Autonomous Driving (ADAS L2+).
     highlights:
       - Implemented modern C++ safety-critical modules for Adaptive AUTOSAR (ARA::COM); designed efficient serialization/deserialization for ECU data flows
       - Created C++ unit and integration tests and Python bindings for automated validation
@@ -100,7 +100,7 @@ projects:
   - name: ESA - Space Resources Challenge | DRAFT PoliTO
     summary: >-
       The challenge aims to develop an autonomous system of UGV and UAV,
-      collaborating in a unknown space environment. Led the robotics
+      collaborating in an unknown space environment. Led the robotics
       architecture, core module development, integration, and DevOps.
     highlights:
       - Design high-level robotics architectures with ROS2
